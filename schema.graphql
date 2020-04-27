@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Query {
+  me: User!
+}
+
+type User {
+  _id: String
+  email: String
+  firstName: String
+  lastName: String
+  name: String
+  availabilityStatus: UserAvailabilityStatsEnum
+  profilePicture: String
+  availabilityDescription: String
+  availabilityStatusImage: String
+}
+
+enum UserAvailabilityStatsEnum {
+  ONLINE
+  WAITING
+  BUSY
+  OFFLINE
+}
